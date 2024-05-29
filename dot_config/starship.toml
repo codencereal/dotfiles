@@ -1,0 +1,46 @@
+[character]
+success_symbol = "[➜](bold #ffffff) "
+error_symbol = "[✗](bold #ffffff) "
+
+# Git branch settings 
+[git_branch]
+symbol = "  "
+style = "bold #ffffff inverted"
+format = "on [$symbol$branch ]($style) "
+
+# Shell and shell indicator settings
+[shell]
+powershell_indicator = " "
+bash_indicator = ""
+zsh_indicator = "z"
+style = "bold #ffffff"
+disabled = false
+
+# Username settings
+[username]
+show_always = true
+style_user = "bold #ffffff"
+
+# Directory settings
+[directory]
+read_only = " "
+style = "bold #ffffff"
+
+# Enables the showing of time in the terminal prompt
+[time]
+disabled = false
+time_format = "%l:%M %p" # Changes the time format to 12 hour 
+format = "at ⌚[$time]($style)\n"
+style = "bold #e0f7ff"
+
+
+### Language configs ###
+[lua]
+symbol = " Lua "
+
+[dart]
+symbol = " Dart "
+
+[c]
+symbol = " C "
+style = "#e0f7ff"

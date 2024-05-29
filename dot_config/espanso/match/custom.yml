@@ -1,0 +1,25 @@
+matches:
+  - trigger: ";con.log"
+    replace: "::log 📅 [[{{mydate}}]]: "
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+  - trigger: ";c.proc"
+    replace: "<p style=\"color: green\">Processed</p>"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
+  - trigger: ";c.unproc"
+    replace: "<p style=\"color: red\">Unprocessed</p>"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+  - trigger: ";gpt-actas"
+    replace: "Act as a professional [profession]. Be responsive with minimal preamble and post-amble in your responses. "

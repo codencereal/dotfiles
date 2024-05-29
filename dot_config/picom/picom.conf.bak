@@ -1,0 +1,36 @@
+### Backend
+backend = "glx";
+glx-no-stencil = true;
+glx-copy-from-front = false;
+
+### Fading ###
+fading = true;
+fade-delta: 4;
+no-fading-openclose = false;
+
+### Opacity ###
+blur-background = true;
+blur-background-exclude = [
+	"window_type = 'dock'"
+];
+blur-method = "dual_kawase";
+blur-strength = 3.5;
+
+opacity-rule = [
+	"100:class_g = 'Alacritty' && focused",
+	"70:class_g = 'Alacritty' && !focused",
+	"90:class_g = 'Code' && focused",
+	"85:class_g = 'Code' && !focused",
+	"80:class_g = 'Spotify' && focused",
+	"60:class_g = 'Spotify' && !focused",
+	"95:class_g = 'Nemo' && focused",
+	"65:class_g = 'Nemo' && !focused"
+
+];
+
+### Corners
+
+corner-radius = 3.0;
+
+### Other
+vsync = true;
